@@ -35,8 +35,9 @@ WHERE language = 'Italian';
 -- obvious. We're following our gut on this one; find out what other city in 
 -- that country she might be flying to.
 
-SELECT * from countrylanguage
-
+SELECT * 
+FROM city 
+WHERE countrycode = 'SMR';
 
 -- Clue #5: Oh no, she pulled a switch – there are two cities with very similar 
 -- names, but in totally different parts of the globe! She's headed to South 
