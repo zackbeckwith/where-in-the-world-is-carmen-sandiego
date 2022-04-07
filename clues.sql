@@ -3,10 +3,10 @@
 -- likely traveling someplace where she won't be noticed, so find the least
 -- populated country in Southern Europe, and we'll start looking for her there.
 
---  SELECT 
--- FROM country 
--- WHERE region = 'Southern Europe'
--- ORDER BY population ASC;
+ SELECT 
+FROM country 
+WHERE region = 'Southern Europe'
+ORDER BY population ASC;
 
 -- Vatican
 
@@ -28,6 +28,8 @@ AND countrycode = 'VAT';
 FROM countrylanguage 
 WHERE language = 'Italian';
 
+-- SMR
+
 
 -- Clue #4: We're booking the first flight out – maybe we've actually got a 
 -- chance to catch her this time. There are only two cities she could be flying 
@@ -38,6 +40,9 @@ WHERE language = 'Italian';
 SELECT * 
 FROM city 
 WHERE countrycode = 'SMR';
+
+-- Serravalle,
+--  San Marino
 
 -- Clue #5: Oh no, she pulled a switch – there are two cities with very similar 
 -- names, but in totally different parts of the globe! She's headed to South 
@@ -55,7 +60,11 @@ WHERE name LIKE 'Ser%';
 -- capital, and get there pronto! Send us the name of where you're headed and 
 -- we'll follow right behind you!
 
--- TODO: Write SQL query here
+SELECT * 
+FROM country 
+WHERE code ='BRA'
+
+-- 211
 
 
 -- Clue #7: She knows we're on to her – her taxi dropped her off at the 
