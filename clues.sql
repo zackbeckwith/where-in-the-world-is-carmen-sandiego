@@ -45,7 +45,9 @@ WHERE countrycode = 'SMR';
 -- headed to, but doesn't end the same. Find out the city, and do another 
 -- search for what country it's in. Hurry!
 
--- TODO: Write SQL query here
+SELECT * 
+FROM city 
+WHERE name LIKE 'Ser%';
 
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at
