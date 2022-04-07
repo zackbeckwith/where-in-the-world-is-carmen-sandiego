@@ -15,16 +15,18 @@
 -- databases and find out what language is spoken in this country, so we can 
 -- call in a translator to work with you.
 
--- SELECT language 
--- FROM countrylanguage 
--- WHERE isofficial = true 
--- AND countrycode = 'VAT';
+SELECT language 
+FROM countrylanguage 
+WHERE isofficial = true 
+AND countrycode = 'VAT';
 
 -- Italian
 
 -- Clue #3: We have new news on the classes Carmen attended – our gumshoes tell us she's moved on to a different country, a country where people speak only the language she was learning. Find out which nearby country speaks nothing but that language.
 
--- TODO: Write SQL query here
+# SELECT * 
+FROM countrylanguage 
+WHERE language = 'Italian';
 
 
 -- Clue #4: We're booking the first flight out – maybe we've actually got a 
