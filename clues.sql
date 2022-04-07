@@ -3,7 +3,7 @@
 -- likely traveling someplace where she won't be noticed, so find the least
 -- populated country in Southern Europe, and we'll start looking for her there.
 
- SELECT 
+SELECT 
 FROM country 
 WHERE region = 'Southern Europe'
 ORDER BY population ASC;
@@ -62,7 +62,7 @@ WHERE name LIKE 'Ser%';
 
 SELECT * 
 FROM country 
-WHERE code ='BRA'
+WHERE code ='BRA';
 
 -- 211
 
@@ -86,5 +86,8 @@ WHERE code ='BRA'
 -- We're counting on you, gumshoe. Find out where she's headed, send us the 
 -- info, and we'll be sure to meet her at the gates with bells on.
 
--- TODO: Write SQL query here
+SELECT * 
+FROM city 
+WHERE population = 91084;
 
+-- Santa Monica
